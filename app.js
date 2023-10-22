@@ -29,7 +29,7 @@ const args = process.argv.slice(2);
 
 // Check if the correct number of arguments are provided
 if (args.length < 3) {
-  console.error('Usage: node app2.js inputPDFPath outputDirectory pageRangeStart pageRangeEnd');
+  console.error('Usage: node app.js inputPDFPath outputDirectory pageRangeStart pageRangeEnd');
   process.exit(1);
 }
 
@@ -42,4 +42,4 @@ const pageRanges = [[pageRangeStart, pageRangeEnd]];
 
 splitPDF(inputPDFPath, outputDirectory, pageRanges);
 
-// node script.js /path/to/input.pdf output.pdf 9 17
+// node app.js "/path/to/input.pdf" "output.pdf" 9 17
